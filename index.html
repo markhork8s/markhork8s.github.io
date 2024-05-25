@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+            background-color: white;
+            color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: white;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Glad to have you here</h1>
+        <h2>Redirecting to the main repo...<h2>
+    </div>
+
+    <noscript>
+        <a href="https://github.com/markhork8s/markhor">Click here if you are not redirected.</a>
+    </noscript>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://github.com/markhork8s/markhor";
+        }, 3000);
+    </script>
+</body>
+
+</html>
